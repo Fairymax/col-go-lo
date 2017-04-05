@@ -2,12 +2,11 @@
 /**
  * ETML
  * Author: Lopezji
- * Date: 13.03.2017
+ * Date: 05.04.2017
  * Description: Footer du site
  */
 ?>
 
 <footer>
-    <p>©pittierfa - ETML - 2017</p>
-
+    <p>© Lopez Jimmy - ETML - 2017</p>
 </footer>
