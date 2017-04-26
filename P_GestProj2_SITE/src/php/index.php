@@ -122,6 +122,11 @@
                             </a>
                         </div>
                     </div>
+                    <div>
+                        <p class="footerCopyright">
+                            Copyright - Lopez Jimmy - Jimmyroylg@hotmail.com
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
