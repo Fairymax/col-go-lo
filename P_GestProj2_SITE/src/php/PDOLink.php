@@ -21,7 +21,6 @@ class PDOLink
             $GLOBALS['config']['pass']);
     }
     function executeQuery($query){
-        //Récupération Données:
         //Préparation requête à executer
         $req = $this->connector->prepare($query);
         //Execute requete

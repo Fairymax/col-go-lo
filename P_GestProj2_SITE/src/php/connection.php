@@ -5,7 +5,7 @@
  * Date: 05.04.2017
  * Time: 14:28
  */
-
+include ("Another/loginForm.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,16 +31,50 @@
                     <h1 class="page-header">
                         Connexion
                     </h1>
-                    <table>
-                        <tr>
-                            <td class="Cell">Identifiant:</td>
-                            <td class="Cell"><input type="text" name="pseudo" /></td>
-                        </tr>
-                        <tr>
-                            <td class="Cell">Mot de passe:</td>
-                            <td class="Cell"><input type="password" name="password" /></td>
-                        </tr>
-                    </table>
+                    <form name="loginForm" action="#" method="post">
+                        <p>
+                            Login: </br>
+                            <input type="text" name="loginName" >
+                        </p>
+                        <p>
+                            Mot de passe: </br>
+                            <input type="password" name="password" >
+                        </p>
+                        <p>
+                            <input type="submit" name="btnSend" value="Connexion">
+                        </p>
+                        <p>
+                            <a href="creationCompte.php">Créer un utilisateur</a>
+                        </p>
+
+                        <?php
+                            if(isset($_POST["btnSend"]))
+                            {
+                                //Créer une connexion avec la class modele
+                                $modele = new loginForm();
+                                $login = $_POST["loginName"];
+                                $pwd = htmlspecialchars(trim($_POST["password"]));
+
+                                // on teste si nos variables sont définies
+                                if (isset($login) && isset($pwd))
+                                {
+                                    //Se connecte à la BD
+                                    $modele->loginPDO();
+
+                                    // on vérifie les informations du formulaire, à savoir si le pseudo saisi est bien un pseudo autorisé, de même pour le mot de passe
+                                    if ($modele->checkPseudo($login) && $modele->checkPassword($pwd))
+                                    {
+                                        // on enregistre les paramètres de notre visiteur comme variables de session ($login et $pwd) (notez bien que l'on utilise pas le $ pour enregistrer ces variables)
+                                        $_SESSION['login'] = $login;
+                                        echo "Vous vous êtes connecté";
+                                        echo '<meta http-equiv="refresh" content="1;URL=index.php">';
+                                    }else
+                                    {
+                                        echo  "Les identifiants rentrée sont erronnée";
+                                    }
+                                }
+                            }
+                        ?>
                 </div>
             </div>
         </div>
