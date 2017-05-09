@@ -1,13 +1,14 @@
-idStudent;stuLastname;stuFirstname;stuLocation;stuEmail;stuPhoneNumber;stuAVSNumber
-1;Itskua;Shido;Ch. du Pontet 3, 1306 Daillens;itsuka.shido@raizen.educanet2.jp;079 654 15 65;756.1468.6123.24
-2;Muto;Yugi;Ch. de Praudri 5, 1306 Daillens;muto.yugi@domino.educanet2.jp;079 254 32 28;756.4668.3245.35
-3;Dadié;Samuel;Av. de la harpe 40, 1007 Lausane;dadiesa@etml.educanet2.ch;078 821 82 20;756.1654.1638.94
-4;Antunes;Filipe;Rue du Grammont 14, 1815 Clarens;antunesfi@etml.educanet2.ch;078 709 17 80;756.3794.1364.16
-5;Mayor;Jonathan;Ch. du chasselas 3, 1170 Aubonne;mayorjo@etml.educanet2.ch;079 692 90 37;756.7649.1347.54
-6;Bopp;Thomas;Rue de la Teinture 19, 1880 Bex;boppth@etml.educanet2.ch;079 522 23 56;756.1673.1576.15
-7;Campiche;Léandre;Av. de la harpe 25, 1007 Lausane;campichele@etml.educanet2.ch;079 963 34 25;756.4618.6731.98
-8;Carbonara;Christian;Ch. du Suchet 6, 1024 Ecublens;carbonarch@etml.educanet2.ch;078 731 38 17;756.4618.9852.52
-9;Corthésy;Romain;Ch. du BourgDessus 28, 1088 Ropraz;corthesyro@etml.educanet2.ch;079 943 04 42;756.3495.6425.98
-10;Dind;Noé;Ch. du Mirebert 8, 1047 Oppens;dindno@etml.educanet2.ch;078 769 92 84;756.1437.5568.69
-11;Groux;Mathias;Ch. de la Prairie 36, 1007 Lausanne;grouxma@etml.educanet2.ch;078 829 51 38;756.3345.1111.55
-12;Vogel;Maëlle;Ch. du Verger 13, 1304 Cossonay;vogelma@etml.educanet2.ch;079 824 19 81;756.1999.2000.15
+idStudent;stuLastname;stuFirstname;stuLocation;stuEmail;stuPhoneNumber;stuProfession;stuAVSNumber
+1;Itskua;Shido;Ch. du Pontet 3, 1306 Daillens;itsuka.shido@raizen.educanet2.jp;079 654 15 65;Etudiant;756.1468.6123.24
+2;Muto;Yugi;Ch. de Praudri 5, 1306 Daillens;muto.yugi@domino.educanet2.jp;079 254 32 28;Etudiant;756.4668.3245.35
+3;Dadié;Samuel;Av. de la harpe 40, 1007 Lausanne;dadiesa@etml.educanet2.ch;078 821 82 20;Etudiant;756.1654.1638.94
+4;Antunes;Filipe;Rue du Grammont 14, 1815 Clarens;antunesfi@etml.educanet2.ch;078 709 17 80;Etudiant;756.3794.1364.16
+5;Mayor;Jonathan;Ch. du chasselas 3, 1170 Aubonne;mayorjo@etml.educanet2.ch;079 692 90 37;Etudiant;756.7649.1347.54
+6;Bopp;Thomas;Rue de la Teinture 19, 1880 Bex;boppth@etml.educanet2.ch;079 522 23 56;Etudiant;756.1673.1576.15
+7;Campiche;Léandre;Av. de la harpe 25, 1007 Lausanne;campichele@etml.educanet2.ch;079 963 34 25;Etudiant;756.4618.6731.98
+8;Carbonara;Christian;Ch. du Suchet 6, 1024 Ecublens;carbonarch@etml.educanet2.ch;078 731 38 17;Etudiant;756.4618.9852.52
+9;Corthésy;Romain;Ch. du BourgDessus 28, 1088 Ropraz;corthesyro@etml.educanet2.ch;079 943 04 42;Etudiant;756.3495.6425.98
+10;Dind;Noé;Ch. du Mirebert 8, 1047 Oppens;dindno@etml.educanet2.ch;078 769 92 84;Etudiant;756.1437.5568.69
+11;Groux;Mathias;Ch. de la Prairie 36, 1007 Lausanne;grouxma@etml.educanet2.ch;078 829 51 38;Etudiant;756.3345.1111.55
+12;Vogel;Maëlle;Ch. du Verger 13, 1304 Cossonay;vogelma@etml.educanet2.ch;079 824 19 81;Etudiant;756.1999.2000.15
+;;;;;;;

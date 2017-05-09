@@ -49,6 +49,7 @@ CREATE TABLE t_student(
         stuLocation    TinyText NOT NULL ,
         stuEmail       Varchar (30) NOT NULL ,
         stuPhoneNumber Varchar (13) ,
+		stuProfessio   Varchar (50) ,
         stuAVSNumber   Varchar (25) ,
         PRIMARY KEY (idStudent )
 )ENGINE=InnoDB;
