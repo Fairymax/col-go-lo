@@ -139,10 +139,10 @@ $connected = false;
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
             <li class="active">
-                <a href="index.html"><i class="fa fa-fw fa-home"></i> Accueil</a>
+                <a href="index.php"><i class="fa fa-fw fa-home"></i> Accueil</a>
             </li>
             <li>
-                <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                <a href="connection.php"><i class="fa fa-fw fa-bar-chart-o"></i> Connexion</a>
             </li>
             <li>
                 <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>

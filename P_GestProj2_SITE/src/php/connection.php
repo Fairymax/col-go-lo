@@ -16,18 +16,35 @@
 
 <body>
 
-    <div id="wrapper">
-        <!-- Navigation -->
-        <nav>
-            <?php include("include/nav.php");# Inclu le fichier nav.php?>
-        </nav>
-        <div id="page-wrapper">
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav>
+        <?php include("include/nav.php");# Inclu le fichier nav.php?>
+    </nav>
+    <div id="page-wrapper">
 
-            <div class="connectMenu">
-                <h1>Connexion</h1>
+        <div class="container-fluid">
 
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Connexion
+                    </h1>
+                    <table>
+                        <tr>
+                            <td class="Cell">Identifiant:</td>
+                            <td class="Cell"><input type="text" name="pseudo" /></td>
+                        </tr>
+                        <tr>
+                            <td class="Cell">Mot de passe:</td>
+                            <td class="Cell"><input type="password" name="password" /></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
+    </div>
 
     <!-- jQuery -->
     <script src="src/js/jquery.js"></script>
