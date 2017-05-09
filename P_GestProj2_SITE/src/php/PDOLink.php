@@ -7,7 +7,7 @@
  * Description:
  */
 
-include ('include/config.php');
+include ('Another/config.php');
 
 class PDOLink
 {
