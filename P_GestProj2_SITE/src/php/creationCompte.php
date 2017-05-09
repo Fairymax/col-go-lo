@@ -37,12 +37,12 @@ include ("PDOLink.php");
                     <!-- Formulaire pour la création de compte -->
                    <form name="creationCompte" action="#" method="post">
                        <p>
-                           Nom: </br>
+                           Login: </br>
                            <input type="text" name="loginName" >
                        </p>
                        <p>
                            Mot de passe: </br>
-                           <input type="text" name="password" >
+                           <input type="password" name="password" >
                        </p>
                        <p>
                            <input type="submit" name="btnSend" value="Envoyer">
@@ -55,7 +55,7 @@ include ("PDOLink.php");
                             $connector = new PDOLink();
                             $login = $_POST["loginName"];
                             //Convertis le mot de passe en Hash pour la sécurité
-                            echo $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+                            $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
                             //Execute la requête pour la création de compte
                             $query = 'INSERT INTO `t_login`(`login`, `password`) VALUES ("' . $login . '","'. $password . '")';
@@ -63,6 +63,9 @@ include ("PDOLink.php");
                             //Ferme et détruis la requête en cours pour liberer l'espace de stockage
                             $connector->closeCursor($req);
                             $connector->destructObject();
+
+                            echo "La création du compte à été un succès";
+                            echo '<meta http-equiv="refresh" content="2;URL=index.php">';
                         }
                        ?>
                    </form>
