@@ -39,7 +39,7 @@ session_start();
 
             ?>
             <li>
-                <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                <a href="members.html"><i class="fa fa-fw fa-table"></i> Membres</a>
             </li>
             <li>
                 <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
