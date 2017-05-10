@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#">
+                            <a href="members.php">
                                 <div class="panel-footer">
                                     <span class="pull-left">Plus de détails</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
