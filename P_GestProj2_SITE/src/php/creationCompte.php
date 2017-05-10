@@ -90,11 +90,11 @@ include ("PDOLink.php");
 
                             //Regarde qu'elle est le type de l'enregistrement pour définir ou va la requête sql
                             if($_POST['type'] == 1) {
-                                $query = 'INSERT INTO `t_former`(`forLastname`, `forFirstname` , `forLocation`, `forEmail` , `forPhoneNumber` , `forProfession` , `forAVSNumber) VALUES ("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '",
-                                "' . $_POST['adress'] . '","' . $_POST['mail'] .'","'. $_POST['phoneNumber'].'","'. $_POST['prof'] . '","' . $_POST['avsCode'] .'")';
+                                 echo $query = 'INSERT INTO `t_former`(`forLastname`, `forFirstname` , `forLocation`, `forEmail` , `forPhoneNumber` , `forProfession` , `forAVSNumber`) VALUES ("' . $_POST["lastname"] . '","' . $_POST["firstname"] . '",
+                                "' . $_POST["adress"] . '","' . $_POST["mail"] .'","'. $_POST["phoneNumber"].'","'. $_POST["prof"] . '","' . $_POST["avsCode"] .'")';
                             }else{
-                                $query = 'INSERT INTO `t_student`(`stuLastname`, `stuFirstname` , `stuLocation`, `stuEmail` , `stuPhoneNumber` , `stuProfession` , `stuAVSNumber) VALUES ("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '",
-                                "' . $_POST['adress'] . '","' . $_POST['mail'] .'","'. $_POST['phoneNumber'].'","'. $_POST['prof'] . '","' . $_POST['avsCode'] .'")';
+                                $query = 'INSERT INTO `t_student`(`stuLastname`, `stuFirstname` , `stuLocation`, `stuEmail` , `stuPhoneNumber` , `stuProfession` , `stuAVSNumber`) VALUES ("' . $_POST["lastname"] . '","' . $_POST["firstname"] . '",
+                                "' . $_POST["adress"] . '","' . $_POST["mail"] .'","'. $_POST["phoneNumber"].'","'. $_POST["prof"] . '","' . $_POST["avsCode"] .'")';
                             }
                             //Execute la requête pour l'ajout des informations dans la table respective
                             $req = $connector->executeQuery($query);
