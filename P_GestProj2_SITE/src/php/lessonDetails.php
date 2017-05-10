@@ -3,10 +3,10 @@
  * Created by PhpStorm.
  * User: colombofa
  * Date: 10.05.2017
- * Time: 14:32
+ * Time: 15:27
  */
-
 ?>
+
 <!--PDO-->
 <?php
 include ("PDOLink.php");
@@ -19,7 +19,12 @@ include ("PDOLink.php");
 </head>
 
 <body>
-
+<?php
+$idLesson = $_GET["id"];
+$connector = new PDOLink();
+$req = $connector->executeQuery("SELECT idLesson, lesLabel, lesStartDate, lesDuration, lesLessonDate FROM t_lesson WHERE  idLesson = $idLesson");
+$result = $connector->prepareData($req);
+?>
 <div id="wrapper">
     <!-- Navigation -->
     <nav>
@@ -31,32 +36,21 @@ include ("PDOLink.php");
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                        Cours Proposés
+                        <?php
+                        echo "Détails du cours de ".$result[0]['lesLabel'];
+                        ?>
                     </h1>
                     <?php
-                    $connector = New PDOLink();
-                    $query = "SELECT `idLesson`, `lesLabel` FROM `t_lesson`";
-                    $req = $connector->executeQuery($query);
-                    $result = $connector->prepareData($req);
+                    foreach($result as $lessons)
+                    {
+                        echo "Prochaine date : ".$lessons['lesStartDate'].'<br>';
+                        echo "Durée d'un cours : ".$lessons['lesDuration'].'<br>';
+                        echo "Nombre de cours : ".$lessons['lesLessonDate'];
+                    }
                     ?>
-                    <table>
-                        <?php
-                        foreach($result as $lessons) {
-                            ?>
-                            <tr>
-                                <th>
-                                    <?php
-                                    echo $lessons["lesLabel"];
-                                    ?>
-                                </th>
-                                <th>
-                                    <a href="lessonDetails.php?id=<?php echo $lessons['idLesson']?>">Détails</a>
-                                </th>
-                            </tr>
-                            <?php
-                        }
-                        ?>
-                    </table>
+                    <form action="#" method="post">
+                        <input type="button" value="S'inscrire">
+                    </form>
                     <?php
                     $connector->closeCursor($req);
                     $connector->destructObject();
