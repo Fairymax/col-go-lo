@@ -5,7 +5,7 @@
  * Date: 05.04.2017
  * Time: 14:28
  */
-include ("Another/loginForm.php");
+include("Include/loginForm.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +70,7 @@ include ("Another/loginForm.php");
                                         echo '<meta http-equiv="refresh" content="1;URL=index.php">';
                                     }else
                                     {
-                                        echo  "Les identifiants rentrée sont erronnée";
+                                        echo  "Les identifiants rentrés sont incorrectes";
                                     }
                                 }
                             }

@@ -28,6 +28,14 @@ session_start();
                 <a href="index.php"><i class="fa fa-fw fa-home"></i> Accueil</a>
             </li>
             <?php
+
+            if(!isset($_SESSION['login']) ==""){
+                echo '<li>';
+                echo '<a href="Profile.php"><i class="fa fa-fw fa-user"></i> Mon profile</a>';
+            }
+            echo '</li>';
+            ?>
+            <?php
                 echo '<li>';
                 if(isset($_SESSION['login']) =="")
                 {

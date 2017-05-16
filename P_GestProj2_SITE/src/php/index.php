@@ -9,7 +9,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <?php include("include/head.php");# Inclu le fichier head.php?>
 </head>
@@ -47,7 +46,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#">
+                            <a href="lessonInformation.php">
                                 <div class="panel-footer">
                                     <span class="pull-left">Plus de détails</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -71,7 +70,7 @@
                             </div>
                             <a href="members.php">
                                 <div class="panel-footer">
-                                    <span class="pull-left">Plus de détails</span>
+                                    <span class="pull-left">Voir les membres</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
