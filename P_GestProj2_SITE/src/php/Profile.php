@@ -6,12 +6,13 @@
  * Time: 13:32
  */
 
+include('PDOLink.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php include("include/head.php");# Inclu le fichier head.php?>
+    <?php include("include/head.php");// Inclu le fichier head.php?>
 </head>
 
 <body>
@@ -19,12 +20,33 @@
 <div id="wrapper">
     <!-- Navigation -->
     <nav>
-        <?php include("include/nav.php");# Inclu le fichier nav.php?>
+        <?php include("include/nav.php");// Inclu le fichier nav.php?>
     </nav>
     <div id="page-wrapper">
+        <!-- Vérifie qu'un utilisateur est connecté -->
         <?php if(!isset($_SESSION['login']) ==""){?>
             <h1>Profil de <?php echo $_SESSION["login"]; ?> </h1>
-        <?php } else{ ?>
+            <?php
+
+            $id = $_SESSION["login"];
+
+            // Création d'objet
+            $connector = new PDOLink();
+
+            // Requête SQL
+            $query = "SELECT * FROM t_student WHERE stuLogin=".$id;
+
+            // Met la requête dans une valeur
+            $req = $connector->executeQuery($query);
+
+            // Récupère le résultat d'une requête
+            $data = $connector->prepareData($req);
+
+            echo "Prénom : ". $data[0]['stuFirstname'] ?>
+
+            ?>
+
+        <?php } else{ ?> <!-- Si aucun utilisateur n'est connecté -->
             <h1>Accès Refusé</h1>
             <p>Cette page est réservée aux membres connectés. Veuillez vous identifier <a href="connection.php">ici </a>ou créer un compte <a href="creationCompte.php">ici</a>.</p>
         <?php } ?>

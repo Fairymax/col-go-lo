@@ -2,7 +2,7 @@
 /**
  * ETML
  * Auteur: Jimmy Lopez
- * Date: 24.03.2017
+ * Date: 09.05.2017
  * Description: Page qui dirige vers les details de la personne souhaitée
  */
 // inclu le PDOLink.php
@@ -23,13 +23,15 @@ include('PDOLink.php');
         <?php include("include/nav.php");# Inclu le fichier nav.php?>
     </nav>
     <div id="page-wrapper">
+        <h1 class="page-header">Détails</h1><br>
 <?php
 
-if (isset($_GET['idFormer'])) // boucle pour savoir si c'est une création ou une modification
+if (isset($_GET['idFormer'])) // Vérifie si la personne que l'on veut afficher est un enseignant
 {
-# Création d'objet
+// Création d'objet
 $connector = new PDOLink();
 
+// Stocke l'id de l'enseignant
 $id = $_GET['idFormer'];
 
 # Requête SQL
@@ -51,7 +53,6 @@ $profession = $data[0]['forProfession'];
 $AVSNumber = $data[0]['forAVSNumber'];
 
 ?>
-        <h1>Détails</h1><br>
 <table>
     <?php
 
@@ -104,7 +105,7 @@ $AVSNumber = $data[0]['forAVSNumber'];
     ///////////// Deuxième requete /////////////
 
 
-    elseif (isset($_GET['idStudent'])) // boucle pour savoir si c'est une création ou une modification
+    elseif (isset($_GET['idStudent'])) // Vérifie si la personne que l'on veut afficher est un étudiant
     {
 
     $id = $_GET['idStudent'];
@@ -121,7 +122,7 @@ $AVSNumber = $data[0]['forAVSNumber'];
     # Récupère le résultat d'une requête
     $data = $connector->prepareData($req);
 
-    // Crée des valeurs contenant les information de l'enseignant
+    // Crée des valeurs contenant les information de l'étudiant
     $firstname = $data[0]['stuFirstname'];
     $lastname = $data[0]['stuLastname'];
     $location = $data[0]['stuLocation'];
@@ -130,7 +131,6 @@ $AVSNumber = $data[0]['forAVSNumber'];
     $AVSNumber = $data[0]['stuAVSNumber'];
 
     ?>
-    <h1>Détails</h1><br>
     <table>
         <?php
 
@@ -176,6 +176,6 @@ $AVSNumber = $data[0]['forAVSNumber'];
         }
         ?>
     </table>
-    <br><a class="button" href="members.php">Retour</a>
+    <br><a class="button" href="members.php">Retour aux membres</a>
     </div>
 

@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include("include/head.php");# Inclu le fichier head.php?>
+    <?php include("include/head.php");// Inclu le fichier head.php?>
 </head>
 
 <body>
@@ -18,13 +18,13 @@
     <div id="wrapper">
         <!-- Navigation -->
         <nav>
-            <?php include("include/nav.php");# Inclu le fichier nav.php?>
+            <?php include("include/nav.php");// Inclu le fichier nav.php?>
         </nav>
         <div id="page-wrapper">
 
             <div class="container-fluid">
 
-                <!-- Page Heading -->
+                <!-- Titre de page -->
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
@@ -33,6 +33,7 @@
                     </div>
                 </div>
                 <div class="row">
+                    <!-- Etiquette de la liste des cours -->
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-green">
                             <div class="panel-heading">
@@ -55,6 +56,7 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Etiquette de la liste des membres -->
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
@@ -77,6 +79,7 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Etiquette de la liste de ? -->
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-yellow">
                             <div class="panel-heading">
@@ -99,6 +102,7 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Etiquette de la liste de ? -->
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-red">
                             <div class="panel-heading">
@@ -142,5 +146,4 @@
     <script src="src/js/plugins/morris/morris-data.js"></script>
 
 </body>
-
 </html>

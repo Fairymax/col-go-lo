@@ -34,8 +34,9 @@ $data = $connector->prepareData($req);
         <?php include("include/nav.php");# Inclu le fichier nav.php?>
     </nav>
     <div id="page-wrapper">
-        <h1>Liste des membres</h1><br>
+        <h1 class="page-header">Liste des membres</h1><br>
         <h2>Enseignants</h2><br>
+        <!-- Entête de tableau -->
         <table cellpadding="10">
             <tr>
                 <th align="left">
@@ -51,7 +52,7 @@ $data = $connector->prepareData($req);
 
             <?php
 
-            # Données du tableau
+            // Données du tableau d'enseignants
             foreach ($data as $former) {
                 ?>
 
@@ -106,7 +107,7 @@ $data = $connector->prepareData($req);
                 </th>
             </tr>
             <?php
-            # Données du tableau
+            // Données du tableau d'étudiants
             foreach ($data as $student) {
                 ?>
 
