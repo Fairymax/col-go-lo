@@ -1,0 +1,23 @@
+idUser;useLastname;useFirstName;useLocation;useEmail;usePhoneNumber;useProfession;useAVSNumber;t_student;t_former
+1;Onizuka;Eikichi;Av. du Rond-Point 18, 1006 Lausanne;onizuka.eikichi@kissho.jp;076 456 15 91;Enseignant en éducation civique;756.4917.2391.45;0;1
+2;Fuyutsuki;Azusa;Av. de Sébeillon 12, 1004 Lausanne;fuyutsuki.azusa@kissho.jp;078 656 28 75;Enseignante en japonais;756.3571.6524.62;0;1
+3;Girardet;Alain;Rte. de Divonne 38, 1260 Nyon;alain.girardet@vd.educanet2.ch;079 656 28 75;Enseignant en web;756.1673.4976.15;0;1
+4;Mveng;Antoine;Av. de la Gare 2, 1315 la Sarraz;antoine.mveng@vd.educanet2.ch;080 656 28 75;Enseignant en sécurité informatique;756.1376.9157.64;0;1
+8;Salulessa;Salulessa;Ch. du Perdu 88, 8888 Akahia;salulessa.salulessa@excuse.educanet2.ch;081 656 28 75;Enseignant en anglais;756.8888.8888.88;0;1
+6;Desgraz;Jean-Luc;Rte. du Chalet-à-Gobet 9, 1055 Froideville;jeanluc.desgraz@vd.educanet2.ch;082 656 28 75;Enseignant en electronique;756.1011.1000.00;0;1
+7;Jaggi;Jean-Christophe;Ave. du Mont d'or 42, 1007 Lausanne;jeanchristophe.jaggi@vd.educanet2.ch;083 656 28 75;Enseignant en mathématique;756.3141.5926.53;0;1
+5;Gruaz;Gilbert;Ch. des Jonquilles 8, 1134 Vufflens-le-Château;gilbert.gruaz@vd.educanet2.ch;084 656 28 75;Enseignant en bureautique;756.3685.4852.64;0;1
+9;Patrick;Ollivier;Rte. de Cossonay 15, 1040 Echallens;ollivier.patrick@vd.educanet2.ch;085 656 28 75;Enseignant en téléphonie;756.2015.2016.14;0;1
+10;Uwamungu;Bernard;Rte. de Chavannes 143, 1007 Lausanne;bernard.uwamungu@vd.educanet2.ch;086 656 28 75;Enseignant en français;756.1011.1000.10;0;1
+101;Itskua;Shido;Ch. du Pontet 3, 1306 Daillens;itsuka.shido@raizen.educanet2.jp;087 656 28 75;Etudiant;756.1468.6123.24;1;0
+102;Muto;Yugi;Ch. de Praudri 5, 1306 Daillens;muto.yugi@domino.educanet2.jp;088 656 28 75;Etudiant;756.4668.3245.35;1;0
+103;Dadié;Samuel;Av. de la harpe 40, 1007 Lausanne;dadiesa@etml.educanet2.ch;089 656 28 75;Etudiant;756.1654.1638.94;1;0
+104;Antunes;Filipe;Rue du Grammont 14, 1815 Clarens;antunesfi@etml.educanet2.ch;090 656 28 75;Etudiant;756.3794.1364.16;1;0
+105;Mayor;Jonathan;Ch. du chasselas 3, 1170 Aubonne;mayorjo@etml.educanet2.ch;091 656 28 75;Etudiant;756.7649.1347.54;1;0
+106;Bopp;Thomas;Rue de la Teinture 19, 1880 Bex;boppth@etml.educanet2.ch;092 656 28 75;Etudiant;756.1673.1576.15;1;0
+107;Campiche;Léandre;Av. de la harpe 25, 1007 Lausanne;campichele@etml.educanet2.ch;093 656 28 75;Etudiant;756.4618.6731.98;1;0
+108;Carbonara;Christian;Ch. du Suchet 6, 1024 Ecublens;carbonarch@etml.educanet2.ch;094 656 28 75;Etudiant;756.4618.9852.52;1;0
+109;Corthésy;Romain;Ch. du BourgDessus 28, 1088 Ropraz;corthesyro@etml.educanet2.ch;095 656 28 75;Etudiant;756.3495.6425.98;1;0
+110;Dind;Noé;Ch. du Mirebert 8, 1047 Oppens;dindno@etml.educanet2.ch;096 656 28 75;Etudiant;756.1437.5568.69;1;0
+111;Groux;Mathias;Ch. de la Prairie 36, 1007 Lausanne;grouxma@etml.educanet2.ch;097 656 28 75;Etudiant;756.3345.1111.55;1;0
+112;Vogel;Maëlle;Ch. du Verger 13, 1304 Cossonay;vogelma@etml.educanet2.ch;098 656 28 75;Etudiant;756.1999.2000.15;1;0
