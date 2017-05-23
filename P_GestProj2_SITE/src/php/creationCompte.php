@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Gomesan
  * Date: 09.05.2017
- * Description:
+ * Description: Page qui permet la création de compte et de fiche d'utilisateur
  */
 
 ?>

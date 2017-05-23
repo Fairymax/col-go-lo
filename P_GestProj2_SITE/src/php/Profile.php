@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Lopezji
  * Date: 16.05.2017
- * Time: 13:32
+ * Description: Page qui permet l'affichage des profils des utilisateurs
  */
 
 include('PDOLink.php');

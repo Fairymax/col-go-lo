@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: colombofa
  * Date: 10.05.2017
- * Time: 14:32
+ * Description: Page qui affiche la liste des cours
  */
 
 ?>

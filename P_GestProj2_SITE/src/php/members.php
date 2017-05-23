@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Lopezji
  * Date: 05.04.2017
- * Time: 14:28
+ * Description: Page qui affiche la liste des membres et des enseignants
  */
 
 include('PDOLink.php');
