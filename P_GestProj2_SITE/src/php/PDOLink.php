@@ -4,7 +4,7 @@
  * ETML
  * Author: Lopezji
  * Date: 20.03.2017
- * Description:
+ * Description: Page de connection et d'execution des requêtes SQl
  */
 
 include ('include/config.php');

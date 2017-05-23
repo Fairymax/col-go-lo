@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: gomesan
  * Date: 09.05.2017
- * Time: 15:06
+ * Description: Page qui permet de fermer la session active
  */
 
 //On lance la session
