@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS db_lessoncatalog2;
-CREATE DATABASE IF NOT EXISTS db_lessoncatalog2 CHARACTER SET 'latin1';
-use db_lessoncatalog2;
+DROP DATABASE IF EXISTS db_lessoncatalog;
+CREATE DATABASE IF NOT EXISTS db_lessoncatalog CHARACTER SET 'latin1';
+use db_lessoncatalog;
 
 #------------------------------------------------------------
 #        Script MySQL.
